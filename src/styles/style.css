@@ -1,0 +1,22 @@
+.inputBlockRoot {
+    display: grid;
+    gap: 1em;
+
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+.inputBlockRoot h3 {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.inputPairRoot {
+    display: grid;
+}
+
+.inputPairRoot label {
+    text-align: left;
+}
