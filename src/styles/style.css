@@ -1,3 +1,23 @@
+/*
+ROOT
+*/
+
+:root {
+    --color-main: #F28E1C;
+    --color-backing: #edf2f8;
+    --color-grey: #ccc;
+
+    --borderRadius: 1em;
+    --margin-default: 1.5em;
+    --footer-height: 3em;
+
+    --leftSideWidth: 300px;
+}
+
+body {
+    background: var(--color-backing);
+}
+
 
 /*
 MAIN CONTENT
@@ -5,11 +25,10 @@ MAIN CONTENT
 
 .ContentRoot {
     display: grid;
-    justify-content: center;
-    align-items: center;
 
     width: 100vw;
     height: 100vh;
+    justify-content: center;
 }
 
 .ContentContainer {
@@ -17,6 +36,9 @@ MAIN CONTENT
     grid-template-columns: auto 1fr;
     align-items: center;
     justify-content: center;
+
+    width: min(100%, calc(var(--leftSideWidth) + 81.1cqmin)); /* I have no idea why it needs this number */
+    background: silver;
 }
 
 
@@ -27,6 +49,9 @@ INPUT SECTION
 .inputBlockRoot {
     display: grid;
     gap: 1em;
+    
+    width: var(--leftSideWidth);
+    
 
     background-color: white;
     border-radius: 1em;
@@ -55,11 +80,20 @@ RENDERED RESUME
     background: silver;
     border: 1px solid black;
     height: 100vh;
+    max-width: min(100%, 77.272727cqmin); /* 8.5/11 */
+    display: grid;
+    /*
+    align-items: center;
+    */
 }
 
 .resumeContent {
     aspect-ratio: 8.5 / 11;
+    /*
     height: 100%;
+    height: min(100%, calc(100vw - var(--leftSideWidth)));
+    */
+    max-height: 100%;
     background: white;
     overflow: hidden;
 }
