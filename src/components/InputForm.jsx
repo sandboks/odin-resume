@@ -10,7 +10,7 @@ Include a styles directory under your src directory for your CSS files. You’ll
 Push the results and deploy them with any of the options mentioned below. At this point of the curriculum, it doesn’t matter which platform you choose as long as your project is live on the internet!
 */
 
-import "./styles/style.css";
+import "../styles/style.css";
 
 function InputForm() {
     let arr = [
