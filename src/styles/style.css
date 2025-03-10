@@ -40,8 +40,9 @@ MAIN CONTENT
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    /*
     justify-content: center;
-
+    */
     width: min(100%, calc(var(--leftSideWidth) + 81.1cqmin)); /* I have no idea why it needs this number */
     background: silver;
 }
@@ -51,17 +52,25 @@ MAIN CONTENT
 INPUT SECTION 
 */
 
+.inputColumnRoot {
+    display: grid;
+    gap: 1em;
+    width: var(--leftSideWidth);
+    /* box-sizing: border-box; */
+    height: 100vh;
+    align-items: center;
+}
+
 .inputBlockRoot {
     display: grid;
     gap: 1em;
-    
-    width: var(--leftSideWidth);
-    
-
     background-color: var(--color-background-main);
     border-radius: 1em;
     padding: 1em;
     border: 1px solid black;
+    /* width: 100%; */
+    /* width: var(--leftSideWidth); */
+    box-sizing: border-box;
 }
 
 .inputBlockRoot h3 {
@@ -85,21 +94,56 @@ RENDERED RESUME
     background: silver;
     border: 1px solid black;
     height: 100vh;
-    max-width: min(100%, 77.272727cqmin); /* 8.5/11 */
-    display: grid;
-    /*
-    align-items: center;
-    */
+    /* max-width: min(100%, 77.272727cqmin); */
+    overflow: hidden;
+    display: grid
+;
+    /* align-items: center; */
 }
 
 .resumeContent {
     aspect-ratio: 8.5 / 11;
-    /*
-    height: 100%;
-    height: min(100%, calc(100vw - var(--leftSideWidth)));
-    */
-    max-height: 100%;
+    height: 297mm;
+    /* width: 210mm; */
+    max-height: 100vh;
     background: var(--color-background-main);
     overflow: hidden;
-        /* align-self: center; */
+    align-self: center;
+}
+
+.resumeTopBanner {
+    background-color: #e5a101;
+    color: white;
+    padding: 1em;
+}
+
+.resumeTopBanner h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.contactInfoGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(0, auto));
+    gap: 1em;
+}
+
+.contactInfoGridPair {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 1em;
+    padding: 0.75em;
+}
+
+.contactInfoGridPair img {
+    height: 2em;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(195deg) brightness(200%) contrast(105%);
 }

@@ -7,8 +7,8 @@ export default function PageBuilder() {
 
     return (
         <>
-            <div class="ContentRoot">
-                <div class="ContentContainer">
+            <div className="ContentRoot">
+                <div className="ContentContainer">
                     <InputForm />
                     <ResumeRender />
                 </div>

@@ -22,14 +22,16 @@ function InputForm() {
 
     return (
         <>
-            <div class="inputBlockRoot">
-                <h3>Personal Details</h3>
-                {arr.map((input, i) => {
-                    console.log("hello") + input + i;
-                    return <CreateTextInput label={input[0]} idLabel={input[1]} key={input[2]} />
-                    //return CreateTextInput(label={input[0]}, input[1]);
-                    //return animal.startsWith(props.c) && <li key={animal}>{animal}</li>;
-                })}
+            <div className="inputColumnRoot">
+                <div className="inputBlockRoot">
+                    <h3>Personal Details</h3>
+                    {arr.map((input, i) => {
+                        console.log("hello") + input + i;
+                        return <CreateTextInput label={input[0]} idLabel={input[1]} key={input[2]} />
+                        //return CreateTextInput(label={input[0]}, input[1]);
+                        //return animal.startsWith(props.c) && <li key={animal}>{animal}</li>;
+                    })}
+                </div>
             </div>
         </>
     )
@@ -37,7 +39,7 @@ function InputForm() {
 
 function CreateTextInput({ label, idLabel, required = false }) {
     return (
-        <div class="inputPairRoot">
+        <div className="inputPairRoot">
             <label>{label}</label>
             <input type="text" id={idLabel}></input>
         </div>
