@@ -26,6 +26,60 @@ export default function ResumeRender() {
                                 </div>
                             </div>
                         </div>
+                        <div className="resumeMainContent">
+                            <div className="resumeContentBlock">
+                                <div className="resumeBlockHeader">
+                                    <h3>Education</h3>
+                                </div>
+                                <div className="resumeBlockContent">
+                                    <div className="twoColumn">
+                                        <div className="resumeBlockColumn">
+                                            <p className="HeaderBoldText">Yale</p>
+                                            <p>Bachelor of something</p>
+                                        </div>
+                                        <div className="resumeBlockColumn">
+                                            <p>August 2020 - present</p>
+                                            <p>Hawaii, US</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE </p>
+                                </div>
+                            </div>
+                            <div className="resumeContentBlock">
+                                <div className="resumeBlockHeader">
+                                    <h3>Work</h3>
+                                </div>
+                                <div className="resumeBlockContent">
+                                    <div className="twoColumn">
+                                        <div className="resumeBlockColumn">
+                                            <p className="HeaderBoldText">Yale</p>
+                                            <p>Bachelor of something</p>
+                                        </div>
+                                        <div className="resumeBlockColumn">
+                                            <p>August 2020 - present</p>
+                                            <p>Hawaii, US</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE </p>
+                                </div>
+                                <div className="resumeBlockContent">
+                                    <div className="twoColumn">
+                                        <div className="resumeBlockColumn">
+                                            <p className="HeaderBoldText">Yale</p>
+                                            <p>Bachelor of something</p>
+                                        </div>
+                                        <div className="resumeBlockColumn">
+                                            <p>August 2020 - present</p>
+                                            <p>Hawaii, US</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE WORDES GO HERE </p>
+                                </div>
+                            </div>
+                        </div>
                         <p>hello</p>
                     </div>
             </div>

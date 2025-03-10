@@ -17,6 +17,9 @@ ROOT
     --footer-height: 3em;
 
     --leftSideWidth: 300px;
+
+    --A4pageHeight: 297mm;
+    --A4pageMargin: 2cm;
 }
 
 body {
@@ -103,7 +106,7 @@ RENDERED RESUME
 
 .resumeContent {
     aspect-ratio: 8.5 / 11;
-    height: 297mm;
+    height: var(--A4pageHeight);
     /* width: 210mm; */
     max-height: 100vh;
     background: var(--color-background-main);
@@ -147,3 +150,33 @@ RENDERED RESUME
     height: 2em;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(195deg) brightness(200%) contrast(105%);
 }
+
+.resumeBlockHeader h3 {
+    background: var(--color-backing);;
+    padding: 0.5em 2em;
+}
+
+.resumeContentBlock {
+    margin: 0 var(--A4pageMargin);
+}
+
+.resumeBlockContent {
+    /*
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    */
+}
+
+.twoColumn {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.resumeBlockColumn p {
+    margin: 0;
+}
+
+.HeaderBoldText {
+    font-weight: bold;;
+}
+
